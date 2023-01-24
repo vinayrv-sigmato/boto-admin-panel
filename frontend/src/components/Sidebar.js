@@ -152,11 +152,11 @@ export default function Sidebar() {
                 >
                   <StoreIcon sx={{color:"white"}}/>
                 </ListItemIcon>
-                <ListItemText primary="Vendor" sx={{ opacity: open ? 1 : 0 ,color:"white",fontSize:"15px",fontWeight:"bold"}}disableTypography  />
+                <ListItemText primary="Vendors" sx={{ opacity: open ? 1 : 0 ,color:"white",fontSize:"15px",fontWeight:"bold"}}disableTypography  />
               </ListItemButton>
             </ListItem>
 
-            <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/campaign")}}>
+            <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/payments")}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,
@@ -173,11 +173,11 @@ export default function Sidebar() {
                 >
                   <PaymentIcon sx={{color:"white"}}/>
                 </ListItemIcon>
-                <ListItemText primary="Payment" sx={{ opacity: open ? 1 : 0 ,color:"white",fontSize:"15px",fontWeight:"bold"}}disableTypography  />
+                <ListItemText primary="Payments" sx={{ opacity: open ? 1 : 0 ,color:"white",fontSize:"15px",fontWeight:"bold"}}disableTypography  />
               </ListItemButton>
             </ListItem>
 
-            <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/campaign")}}>
+            <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>{navigate("/invoice")}}>
               <ListItemButton
                 sx={{
                   minHeight: 48,

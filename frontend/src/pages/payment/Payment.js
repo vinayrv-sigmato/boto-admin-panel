@@ -1,9 +1,10 @@
 import React from 'react';
 import  Box  from '@mui/material/Box';
-import Sidebar from '../components/Sidebar';
-import NavBar from '../components/Navbar';
+import Sidebar from '../../components/Sidebar';
+import NavBar from '../../components/Navbar';
+import { Typography } from '@mui/material';
 
-function Dashboard(){
+function Payment(){
     return(
         <>
         <Box sx={{ bgcolor:'#eeeeee',height:'100vh'}}>
@@ -13,7 +14,7 @@ function Dashboard(){
                 <Sidebar/>
                 <Box component="main" sx={{ flexGrow: 1, p: 3 }}>
                     <Box height={40}/>
-                    <h1>Dashboard</h1>
+                    <Typography variant='h4' sx={{fontWeight:"bold"}}>Payments</Typography>
                 </Box>
             </Box>
         </Box>
@@ -21,4 +22,4 @@ function Dashboard(){
     )
 }
 
-export default Dashboard
+export default Payment
